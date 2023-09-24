@@ -1,0 +1,39 @@
+//Variables
+$primary-color: rgb(42, 202, 255);
+$secondary-color: red;
+$tertiary-color: darkblue;
+
+$font-lg: 20px;
+$font-md: 16px;
+$font-sm: 12px;
+
+//Mixins
+@mixin spacing($padding) {
+    padding: $padding;
+    margin: 3px;
+}
+
+@mixin transition($color, $backgroundcolor) {
+    transition: $color;
+    transition: $backgroundcolor;
+}
+
+//Classes / Functions
+//Function
+@function increaseFontSize($fsize) {
+    @return $fsize * 2;
+}
+
+//Extend
+.background-primary {
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+p {
+    //Extend call
+    @extend .background-primary;
+    //Function call
+    font-size: increaseFontSize(16);
+}

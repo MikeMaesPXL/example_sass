@@ -1,0 +1,16 @@
+.footer {
+    //Include
+    @include spacing(3px);
+    text-align: center;
+
+    h3 {
+        font-size: $font-md;
+        color: $primary-color;
+    }
+}
+
+.footer:hover {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    @include transition(0.5s, 1s);
+}

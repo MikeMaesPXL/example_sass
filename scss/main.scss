@@ -1,37 +1,4 @@
-$primary-color: orange;
-$secondary-color: red;
-$tertiary-color: darkblue;
-
-$font-lg: 20px;
-$font-md: 16px;
-$font-sm: 12px;
-
-.nav {
-    background-color: $tertiary-color;
-
-    li {
-        list-style: none;
-        text-decoration: none;
-    }
-
-    a {
-        color: $primary-color;
-    }
-}
-
-.banner {
-    text-align: center;
-
-    h1 {
-        font-size: $font-lg;
-        color: $secondary-color;
-    }
-}
-.footer {
-    text-align: center;
-
-    h3 {
-        font-size: $font-md;
-        color: $primary-color;
-    }
-}
+@import "global";
+@import "nav";
+@import "section";
+@import "footer";

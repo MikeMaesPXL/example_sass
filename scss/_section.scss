@@ -1,0 +1,10 @@
+.banner {
+    //Include
+    @include spacing(3px);
+    text-align: center;
+
+    h1 {
+        font-size: $font-lg;
+        color: $secondary-color;
+    }
+}
